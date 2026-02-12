@@ -1,26 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Homepage() {
   const bikes = [
     {
       name: "TVS Apache RTR 160 4V",
-      image: "https://tvsnepal.com/product/apache-rtr-160-4v-se",
+      slug: "apache-rtr-160-4v",
+      image:
+        "https://tvsnepal.com/images/product/Apache-RTR-160-4V--SE68a6c7f93553bENGINE-&-PERFORMANCE654cad5cce4731604v_spl2036-Fat--Bike.png",
       description: "Race-inspired performance with aggressive styling.",
+      link: "https://tvsnepal.com/product/apache-rtr-160-4v-se",
     },
     {
       name: "TVS Ntorq 125",
-      image: "https://tvsnepal.com/product/ntorq-xp",
+      slug: "ntorq-125",
+      image:
+        "https://tvsnepal.com/images/product/Ntorq-XP-Red685ced33af853Ntorq-XP-red.png",
       description: "Smart scooter with Bluetooth and sporty look.",
+      link: "https://tvsnepal.com/product/ntorq-xp",
     },
     {
       name: "TVS Raider 125",
-      image: "https://tvsnepal.com/product/tvs-Raider-Fi",
+      slug: "raider-125",
+      image:
+        "https://tvsnepal.com/images/product/Tvs-Raider-617e385d889eetvs-raider.jpg",
       description: "Stylish commuter bike with great mileage.",
+      link: "https://tvsnepal.com/product/tvs-Raider-Fi",
     },
     {
       name: "TVS Ronin",
-      image: "https://tvsnepal.com/ronin/",
+      slug: "tvs-ronin",
+      image:
+        "https://tvsnepal.com/images/product/Tvs-Ronin-6899a6602d11fSide-view.png",
       description: "Modern-retro motorcycle with powerful engine.",
+      link: "https://tvsnepal.com/ronin/",
     },
   ];
 
@@ -64,7 +77,7 @@ export function Homepage() {
 
           <div className="flex justify-center">
             <Image
-              src=""
+              src="https://tvsnepal.com/images/product/RTR-160-4V-Refresh-FD628739b93ac2fRTR-160-4V-Refresh-RD628738ab4bee9RTR-160-4V-RD60c1e66c9cb7dRTR-160-4V5cf8d295e83ca160_4v.png"
               alt="TVS Bike"
               width={500}
               height={400}
@@ -108,9 +121,14 @@ export function Homepage() {
                 />
                 <h3 className="text-lg font-semibold mb-2">{bike.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{bike.description}</p>
-                <button className="bg-black text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                <a
+                  href={bike.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-4 py-2 rounded hover:bg-red-600 transition inline-block"
+                >
                   View Details
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -118,7 +136,7 @@ export function Homepage() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-gray-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
           <p>📍 Kathmandu, Nepal</p>
@@ -128,8 +146,8 @@ export function Homepage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-6 text-center text-sm">
-        © 2026 TVS Nepal Showroom. All Rights Reserved.
+      <footer className="bg-slate-700 text-gray-400 py-6 text-center text-sm">
+        © 2026 TVS Showroom. All Rights Reserved.
       </footer>
     </main>
   );
