@@ -2,8 +2,9 @@ import Image from "next/image";
 import { JSX } from "react";
 
 import ModelsSection from "./components/ModelsSection";
-import Navbar from "./components/Navbar";
 import Footer from "./components/ Footer";
+import Navbar from "./components/Navbar";
+import Link from "next/link";
 
 export default function Home(): JSX.Element {
   return (
@@ -82,7 +83,7 @@ export default function Home(): JSX.Element {
                 <div className="text-sm text-gray-400">Models Available</div>
               </div>
               <div>
-                <div className="text-3xl font-black text-red-500">5000+</div>
+                <div className="text-3xl font-black text-red-500">1000+</div>
                 <div className="text-sm text-gray-400">Happy Customers</div>
               </div>
               <div>
@@ -227,8 +228,8 @@ export default function Home(): JSX.Element {
 
           {/* CTA Button */}
           <div className="text-center mt-16">
-            <a
-              href="tel:015902361"
+            <Link
+              href="/book-test-ride"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-xl font-bold text-lg hover:from-red-700 hover:to-red-800 transition-all duration-300 hover:shadow-2xl hover:shadow-red-600/50 hover:scale-105"
             >
               <svg
@@ -245,7 +246,7 @@ export default function Home(): JSX.Element {
                 />
               </svg>
               Book Your Test Ride Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>
