@@ -28,14 +28,14 @@ export default function Navbar(): JSX.Element {
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 transition-all duration-300 group-hover:w-full"></span>
           </a>
           <a
-            href="#"
+            href="#models"
             className="relative group text-sm font-medium tracking-wide transition-colors duration-300 hover:text-red-500 text-gray-300"
           >
             Models
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 transition-all duration-300 group-hover:w-full"></span>
           </a>
           <a
-            href="#"
+            href="#contact"
             className="relative group text-sm font-medium tracking-wide transition-colors duration-300 hover:text-red-500 text-gray-300"
           >
             Contact
