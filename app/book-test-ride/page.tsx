@@ -64,7 +64,7 @@ export default function BookTestRide(): JSX.Element {
       newErrors.phone = "Invalid phone number.";
     if (!formData.bike) newErrors.bike = "Please select a bike.";
     if (!validateDateTime(formData.datetime))
-      newErrors.datetime = "Choose future date, Mon–Fri, between 9AM–6PM.";
+      newErrors.datetime = "Choose future date, Sun–Fri, between 9AM–6PM.";
 
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
@@ -93,7 +93,7 @@ export default function BookTestRide(): JSX.Element {
 
         setTimeout(() => {
           router.push("/");
-        }, 2000);
+        }, 1000);
       } else {
         alert("Failed to submit. Try again.");
       }
@@ -112,7 +112,8 @@ export default function BookTestRide(): JSX.Element {
           <div className="bg-gray-100 p-8 rounded-3xl shadow-lg">
             {success && (
               <p className="bg-green-100 text-green-700 p-4 rounded mb-6 text-center font-semibold">
-                ✅ Test ride request submitted successfully! Redirecting...
+                ✅ Test ride request submitted successfully! We will contact
+                soon..
               </p>
             )}
 
