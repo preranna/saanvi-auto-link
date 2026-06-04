@@ -22,10 +22,10 @@ interface ValidationResult {
   errors: FormErrors;
 }
 
-interface ApiResponse {
-  success: boolean;
-  message: string;
-}
+// interface ApiResponse {
+//   success: boolean;
+//   message: string;
+// }
 
 // Constants
 const BUSINESS_HOURS = {
@@ -248,7 +248,7 @@ export default function BookTestRide(): JSX.Element {
                         Test ride request submitted!
                       </p>
                       <p className="text-green-700 text-sm">
-                        We'll contact you shortly to confirm your booking.
+                        We&apos;ll contact you shortly to confirm your booking.
                       </p>
                     </div>
                   </div>
@@ -444,7 +444,7 @@ export default function BookTestRide(): JSX.Element {
                     </p>
                   )}
                   <p className="text-xs text-gray-500 mt-2">
-                    🕐 We're open Mon–Sat, 9 AM to 6 PM
+                    🕐 We&apos;re open Mon–Sat, 9 AM to 6 PM
                   </p>
                 </div>
 
