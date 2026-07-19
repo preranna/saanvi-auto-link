@@ -613,7 +613,7 @@ export default function BookService(): JSX.Element {
                     </p>
                   )}
                   <p className="text-xs text-gray-500 mt-2">
-                    🕐 We're open Mon–Sat, 9 AM to 6 PM
+                    🕐 We`&apos;`re open Mon–Sat, 9 AM to 6 PM
                   </p>
                 </div>
 

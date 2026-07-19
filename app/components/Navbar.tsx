@@ -41,29 +41,29 @@ export default function Navbar(): JSX.Element {
 
           {/* Desktop Menu */}
           <div className="space-x-8 hidden md:flex items-center">
-            <a
+            <Link
               href="/"
               className="relative group text-sm font-medium tracking-wide transition-colors duration-300 hover:text-red-500 text-gray-300"
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/#models"
               className="relative group text-sm font-medium tracking-wide transition-colors duration-300 hover:text-red-500 text-gray-300"
             >
               Models
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/#contact"
               className="relative group text-sm font-medium tracking-wide transition-colors duration-300 hover:text-red-500 text-gray-300"
             >
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
 
             <Link
               href="/book-test-ride"
@@ -147,29 +147,29 @@ export default function Navbar(): JSX.Element {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-6 space-y-4">
-          <a
+          <Link
             href="/"
             onClick={closeMobileMenu}
             className="block px-4 py-3 rounded-lg text-gray-300 hover:text-red-500 hover:bg-red-600/10 transition-all duration-300 font-medium"
           >
             🏠 Home
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/#models"
             onClick={closeMobileMenu}
             className="block px-4 py-3 rounded-lg text-gray-300 hover:text-red-500 hover:bg-red-600/10 transition-all duration-300 font-medium"
           >
             🏍️ Models
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/#contact"
             onClick={closeMobileMenu}
             className="block px-4 py-3 rounded-lg text-gray-300 hover:text-red-500 hover:bg-red-600/10 transition-all duration-300 font-medium"
           >
             📞 Contact
-          </a>
+          </Link>
 
           <div className="border-t border-gray-800 pt-4 space-y-3">
             <Link
