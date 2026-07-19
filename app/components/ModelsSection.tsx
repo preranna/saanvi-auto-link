@@ -67,8 +67,6 @@ export default function ModelsSection(): JSX.Element {
             {/* View All Models */}
             <a
               href="https://tvsnepal.com/shop"
-              target="_blank"
-              rel="noopener noreferrer"
               className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 hover:shadow-xl hover:shadow-red-600/30 hover:scale-105 flex items-center gap-2"
             >
               View All Models
@@ -89,10 +87,10 @@ export default function ModelsSection(): JSX.Element {
 
             {/* Schedule Test Ride */}
             <a
-              href="#contact"
+              href="/book-servicing"
               className="px-8 py-4 bg-white border-2 border-gray-200 text-gray-900 rounded-xl font-bold hover:border-red-600 hover:text-red-600 transition-all duration-300 hover:scale-105"
             >
-              Schedule Test Ride
+              Schedule Servicing
             </a>
           </div>
         </div>
